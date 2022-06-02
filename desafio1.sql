@@ -1,1 +1,7 @@
 CREATE DATABASE SpotifyClone;
+
+CREATE TABLE SpotifyClone.plan (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    `name` VARCHAR(50) NOT NULL,
+    cost DECIMAL(5, 2) NOT NULL
+);
