@@ -2,5 +2,7 @@
   "coluna_usuario": "name",
   "tabela_que_contem_usuario": "user",
   "coluna_plano": "name",
-  "tabela_que_contem_plano": "plan"
+  "tabela_que_contem_plano": "plan",
+  "coluna_artista": "name",
+  "tabela_que_contem_artista": "artist"
 }
