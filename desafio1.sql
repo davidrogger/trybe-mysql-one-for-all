@@ -2,11 +2,12 @@ CREATE DATABASE SpotifyClone;
 
 CREATE TABLE SpotifyClone.plan (
 	id INT PRIMARY KEY AUTO_INCREMENT,
-    `name` VARCHAR(50) NOT NULL,
-    cost DECIMAL(5, 2) NOT NULL
+  `name` VARCHAR(50) NOT NULL,
+  cost DECIMAL(5, 2) NOT NULL
 );
 
-INSERT SpotifyClone.plan(`name`, cost) VALUES
+INSERT SpotifyClone.plan(`name`, cost)
+VALUES
   ('gratuito', 0.00),
   ('universitário', 5.99),
   ('pessoal', 6.99),
@@ -21,7 +22,8 @@ CREATE TABLE SpotifyClone.user (
   FOREIGN KEY (plan_id) REFERENCES plan(id)
 );
 
-INSERT SpotifyClone.user(`name`, age, signure_date, plan_id) VALUES
+INSERT SpotifyClone.user(`name`, age, signure_date, plan_id)
+VALUES
   ('Thati', 23, '2019-10-20', 1),
   ('Cintia', 35, '2017-12-30', 4),
   ('Bill', 20, '2019-06-05', 2),
