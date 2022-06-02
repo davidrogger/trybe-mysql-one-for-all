@@ -1,1 +1,1 @@
--- Iniciando PR
+CREATE DATABASE SpotifyClone;
