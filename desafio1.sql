@@ -37,7 +37,7 @@ VALUES
 
 CREATE TABLE SpotifyClone.artist(
   id INT PRIMARY KEY AUTO_INCREMENT,
-  name VARCHAR(100) NOT NULL,
+  name VARCHAR(100) NOT NULL
 );
 
 INSERT SpotifyClone.artist(`name`,)
