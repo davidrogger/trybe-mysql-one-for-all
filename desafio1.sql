@@ -35,7 +35,16 @@ VALUES
   ('Angelina', 42, '2018-04-29', 4),
   ('Paul', 46, '2017-01-17', 4);
 
-CREATE TABLE SpotifyClone.artist (
+CREATE TABLE SpotifyClone.artist(
   id INT PRIMARY KEY AUTO_INCREMENT,
   name VARCHAR(100) NOT NULL,
 );
+
+INSERT SpotifyClone.artist(`name`,)
+VALUES
+  ('Walter Phoenix'),
+  ('Peter Strong'),
+  ('Lance Day'),
+  ('Freedie Shannon'),
+  ('Tyles Isle'),
+  ('Fog');
