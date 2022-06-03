@@ -40,7 +40,7 @@ CREATE TABLE SpotifyClone.artist(
   name VARCHAR(100) NOT NULL
 );
 
-INSERT SpotifyClone.artist(`name`,)
+INSERT SpotifyClone.artist(`name`)
 VALUES
   ('Walter Phoenix'),
   ('Peter Strong'),
@@ -48,3 +48,11 @@ VALUES
   ('Freedie Shannon'),
   ('Tyles Isle'),
   ('Fog');
+
+CREATE TABLE SpotifyClone.album(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  `name` VARCHAR(100) NOT NULL,
+  artist_id INT NOT NULL,
+  release_year DATETIME NOT NULL,
+  FOREIGN KEY (artist_id) REFERENCES artist(id)
+);

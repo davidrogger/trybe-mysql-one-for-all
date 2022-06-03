@@ -4,5 +4,7 @@
   "coluna_plano": "name",
   "tabela_que_contem_plano": "plan",
   "coluna_artista": "name",
-  "tabela_que_contem_artista": "artist"
+  "tabela_que_contem_artista": "artist",
+  "coluna_album": "album",
+"  tabela_que_contem_album": "name"
 }
