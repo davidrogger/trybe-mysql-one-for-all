@@ -46,7 +46,7 @@ VALUES
   ('Peter Strong'),
   ('Lance Day'),
   ('Freedie Shannon'),
-  ('Tyles Isle'),
+  ('Tyler Isle'),
   ('Fog');
 
 CREATE TABLE SpotifyClone.album(
