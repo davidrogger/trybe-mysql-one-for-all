@@ -71,7 +71,7 @@ VALUES
   ('Apparatus', 6, '2015');
 
 CREATE TABLE SpotifyClone.music(
-  id INT PRIMARY KEY NOT NULL,
+  id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
   `name` VARCHAR(150) NOT NULL,
   duration_seconds INT NOT NULL,
   album_id INT NOT NULL,
