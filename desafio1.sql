@@ -17,7 +17,7 @@ CREATE TABLE SpotifyClone.user (
   id INT PRIMARY KEY AUTO_INCREMENT,
   `name` VARCHAR(100) NOT NULL,
   age INT NOT NULL,
-  signature_date DATETIME NOT NULL,
+  signature_date DATE NOT NULL,
   plan_id INT,
   FOREIGN KEY (plan_id) REFERENCES plan(id)
 );
@@ -53,7 +53,7 @@ CREATE TABLE SpotifyClone.album(
   id INT PRIMARY KEY AUTO_INCREMENT,
   `name` VARCHAR(100) NOT NULL,
   artist_id INT NOT NULL,
-  release_year DATETIME NOT NULL,
+  release_year YEAR NOT NULL,
   FOREIGN KEY (artist_id) REFERENCES artist(id)
 );
 
@@ -69,4 +69,3 @@ VALUES
   ('Cabinet of fools', 5, '2012'),
   ('No guarantees', 5, '2015'),
   ('Apparatus', 6, '2015');
-  
