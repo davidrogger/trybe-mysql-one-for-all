@@ -169,3 +169,11 @@ VALUES
   (10, 21, '2017-12-04 05:33:43'),
   (10, 12, '2017-07-27 05:24:49'),
   (10, 13, '2017-12-25 01:03:57');
+
+CREATE TABLE SpotifyClone.follow_list(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  `user_id` INT NOT NULL,
+  artist_id INT NOT NULL,
+  FOREIGN KEY (`user_id`) REFERENCES user(id),
+  FOREIGN KEY (artist_id) REFERENCES artist(id)
+);
