@@ -120,3 +120,11 @@ VALUES
   ("Wouldn\'t It Be Nice", 213, 10),
   ('Baby', 136, 10),
   ('You Make Me Feel So..', 83, 10);
+
+CREATE TABLE SpotifyClone.playback_history(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  `user_id` INT NOT NULL,
+  music_id INT NOT NULL,
+  playback_datetime DATETIME NOT NULL,
+  FOREIGN KEY (`user_id`) REFERENCES `user`(id)
+);

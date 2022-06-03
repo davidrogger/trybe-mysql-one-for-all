@@ -8,5 +8,7 @@
   "coluna_album": "album",
   "tabela_que_contem_album": "name",
   "coluna_cancoes": "name",
-  "tabela_que_contem_cancoes": "music"
+  "tabela_que_contem_cancoes": "music",
+  "coluna_historico_de_reproducoes": "playback_datetime",
+  "tabela_que_contem_historico_de_reproducoes": "playback_history"
 }
