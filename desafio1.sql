@@ -69,3 +69,11 @@ VALUES
   ('Cabinet of fools', 5, '2012'),
   ('No guarantees', 5, '2015'),
   ('Apparatus', 6, '2015');
+
+CREATE TABLE SpotifyClone.music(
+  id INT PRIMARY KEY NOT NULL,
+  `name` VARCHAR(150) NOT NULL,
+  duration_seconds INT NOT NULL,
+  album_id INT NOT NULL,
+  FOREIGN KEY (album_id) REFERENCES album(id)
+);

@@ -6,5 +6,7 @@
   "coluna_artista": "name",
   "tabela_que_contem_artista": "artist",
   "coluna_album": "album",
-"  tabela_que_contem_album": "name"
+  "tabela_que_contem_album": "name",
+  "coluna_cancoes": "name",
+  "tabela_que_contem_cancoes": "music"
 }
