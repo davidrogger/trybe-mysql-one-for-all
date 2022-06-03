@@ -122,11 +122,12 @@ VALUES
   ('You Make Me Feel So..', 83, 10);
 
 CREATE TABLE SpotifyClone.playback_history(
-  id INT PRIMARY KEY AUTO_INCREMENT,
   `user_id` INT NOT NULL,
   music_id INT NOT NULL,
   playback_datetime DATETIME NOT NULL,
-  FOREIGN KEY (`user_id`) REFERENCES `user`(id)
+  PRIMARY KEY(`user_id`, music_id),
+  FOREIGN KEY(`user_id`) REFERENCES `user`(id),
+  FOREIGN KEY(music_id) REFERENCES music(id)
 );
 
 INSERT SpotifyClone.playback_history(`user_id`, music_id, playback_datetime)
@@ -171,11 +172,11 @@ VALUES
   (10, 13, '2017-12-25 01:03:57');
 
 CREATE TABLE SpotifyClone.follow_list(
-  id INT PRIMARY KEY AUTO_INCREMENT,
   `user_id` INT NOT NULL,
   artist_id INT NOT NULL,
-  FOREIGN KEY (`user_id`) REFERENCES user(id),
-  FOREIGN KEY (artist_id) REFERENCES artist(id)
+  PRIMARY KEY(`user_id`, artist_id),
+  FOREIGN KEY(`user_id`) REFERENCES user(id),
+  FOREIGN KEY(artist_id) REFERENCES artist(id)
 );
 
 INSERT SpotifyClone.follow_list(`user_id`, artist_id)
