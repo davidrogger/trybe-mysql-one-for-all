@@ -2,7 +2,9 @@
 
 ## Seção: `Funções SQL, JOINs e Normalização`
 
-- lore
+- Tivemos uma introdução a modelagem de banco de dados, transformando ideias em modelo de banco de dados, identificando entidades, atributos e relacionamentos, construindo diagramas de entidade relacional(ER) e a normalizar o banco de dados seguindo as Formas Normais, 1ª, 2ª e 3ª forma normal.
+- Essa seção aprofundamos os conhecimentos usando condicionais, manipular strings, criar funções matemáticas com o MYSQL, extração de informações específicas sobre datas, utilizar funções de agregação AVG, MIN, MAX SUM e COUNT, criar agrupamento usando GROUP BY e HAVING.
+- Combinar dados de duas ou mais tabelas com INNER JOIN, LEFT JOIN, RIGHT JOIN e SELF JOIN.
 
 #
 <div align="center">
