@@ -19,7 +19,7 @@
 #
 ## Projeto: `One For All`
 
-- Criar um banco de dados relacionado seguindo a até 3ª normalização de um Clone do Spotify, onde possuimos usuários, artistas, albuns, musicas, histórico de músicas tocas e lista de seguidores.
+- Criar um banco de dados relacional seguindo até 3ª normalização de um Clone do Spotify, onde possuímos usuários, artistas, álbuns, musicas, histórico de músicas tocas e lista de seguidores.
 
 # Tecnologias e ferramentas usadas 🛠
 
@@ -29,14 +29,14 @@
 
 # Desafios
 
-- Diferente do anterior, esse projeto teve todo um desenvolvimento e planejamento na criação da tabela, definindo a relação entre as tabelas, um para muitos(1:N), muitos para muitos(N:N) e normalização do banco, para construir um banco efieciente.
+- Diferente do anterior, esse projeto teve todo um desenvolvimento e planejamento na criação do banco, definindo a relação entre as tabelas, um para muitos(1:N), muitos para muitos(N:N) usando a normalização do banco, para construir um banco eficiente.
 - Usei uma ferramenta para desenhar o relacionamento indicado pela trybe no curso, [draw.io](https://draw.io/).
 - Comecei analisando quais tabelas preciso criar, começando, user, plan, playback_history, music, album e artist.
-- Iniciando pela tabela de usuário e todos seus relacionametos, ele pode ter apenas um plano, e um plano pode ter vários usuários, tornando (plan)1:N(user).
-- Como um usuário pode seguir vários artistas e um artista pode ser seguido por vários usuários, sendo uma relação N:N, foi necessária a criação de uma tabela follow_list, para representar o relacionamento das tabelas que tem multiplos relacionamentos, criando uma chave primária composta com os ids de artista e user, tornando possivel, um usuário seguir vários artista e vários artista serem seguidos por vários usuários.
-- Histórico de musicas, pode ter apenas um usuário e uma música, mas o usuário e a musica podem ter vários históricos de muśica, (playback_history)1:N(user) e (playback_history)1:N(music).
-- Tabela de Musica, uma música pode pertencer para 1 album, e um album pode ter várias músicas (music)1:N(album).
-- Um album pertence há um artista e um artista pode ter vários albuns. (album)1:N(artista).
+- Iniciando pela tabela de usuário e todos seus relacionamentos, ele pode ter apenas um plano, e um plano pode ter vários usuários, tornando (plan)1:N(user).
+- Como um usuário pode seguir vários artistas e um artista pode ser seguido por vários usuários, sendo uma relação N:N, foi necessária a criação de uma tabela follow_list, para representar o relacionamento das tabelas que tem múltiplos relacionamentos, criando uma chave primária composta com os ids de artista e user, tornando possivel, um usuário seguir vários artista e vários artistas serem seguidos por vários usuários.
+- Histórico de músicas, pode ter apenas um usuário e uma música, mas o usuário e a música podem ter vários históricos de música, (playback_history)1:N(user) e (playback_history)1:N(music).
+- Tabela de música, uma música pode pertencer para 1 álbum, e um álbum pode ter várias músicas (music)1:N(album).
+- Um album pertence há um artista e um artista pode ter vários álbuns. (album)1:N(artista).
 
 >Formando o seguinte Diagrama ER:
 ![DiagramaER](./readme-imgs/diagram_er_spotifyclone.svg)
@@ -45,7 +45,7 @@
 
 # Conclusão
 
-- Nesse projeto tive que usar bem mais a criatividade e habilidades analiticas, criando e desenhando todo um modelo, seguindo de união de tabelas para formar informações concatenadas com seu relacionamento.
+- Nesse projeto tive que usar bem mais a criatividade e habilidades analíticas, criando e desenhando todo um modelo, seguindo de união de tabelas para formar informações concatenadas com seu relacionamento.
 
 </details>
 
