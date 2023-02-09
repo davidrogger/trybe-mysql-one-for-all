@@ -60,7 +60,17 @@
 ### Requisitos
 *Nome* | *Avaliação*
 --- | :---:
-1 - lore | :heavy_check_mark:
+1 - Normalize as tabelas para a 3ª Forma Normal | :heavy_check_mark:
+2 - Exibe as estatísticas musicais | :heavy_check_mark:
+3 - Exibe o histórico de reprodução para cada pessoa usuária | :heavy_check_mark:
+4 - Exibe a condicao do usuario se esta ativo ou inativo | :heavy_check_mark:
+5 - Exibe top 2 hits mais tocados no momento | :heavy_check_mark:
+6 - Exibe o relatório de faturamento da empresa | :heavy_check_mark:
+7 - Exibe uma relação de todos os álbuns produzidos por cada artista | :heavy_check_mark:
+8 - Exibe uma relação de álbuns produzidos pelo artista Walter Phoenix | :heavy_check_mark:
+9 - Exibe a quantidade de músicas que estão presentes atualmente no histórico de reprodução da pessoa usuária Bill | :heavy_check_mark:
+10 - Exibe o nome e a quantidade de vezes que cada canção foi tocada por pessoas usuárias do plano gratuito ou pessoal | :heavy_check_mark:
+11 - Exibe nomes de musicas em sua forma normal e com string trocada | :heavy_check_mark:
 
 </details>
 
